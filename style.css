@@ -29,3 +29,11 @@ p span.tldr::before {
 	font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
+
+.bypostauthor {
+		background: rgba(240,248,255,1);
+    padding: 12px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
