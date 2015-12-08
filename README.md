@@ -11,7 +11,9 @@ What this theme aims to modify:
 
 + as a child theme:
   + Reduce meta in posts (content & singles)
-  + Modify footer to change links and add licence
+  + Change footer links and add licence
+  + Remove emoji bloat
+  + Add some custom style
 + as a full featured theme (someday):
   + Custom header image
   + Additional posts type
