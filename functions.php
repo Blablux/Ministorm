@@ -8,6 +8,8 @@ function theme_enqueue_styles() {
 }
 
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
+remove_action( ‘wp_head’, ‘print_emoji_detection_script’, 7 );
+remove_action( ‘wp_print_styles’, ‘print_emoji_styles’ );
 
 /**
  * Prints HTML with meta information for the current post-date/time and author.
