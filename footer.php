@@ -12,7 +12,7 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			All texts are <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a>
+			All texts are <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a>
 			<span class="sep"> | </span>
 			<a href="https://github.com/Blablux/minnow-redux">Minnow-Redux</a>
 		</div><!-- .site-info -->
