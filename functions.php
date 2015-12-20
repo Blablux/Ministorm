@@ -67,3 +67,37 @@ function minnow_posted_on() {
 	}
 	edit_post_link( __( 'Edit', 'minnow' ), '<span class="edit-link">', '</span>' );
 }
+
+function minnow_comments( $comment, $args, $depth ) {
+?>
+	<li id="comment-<?php comment_ID(); ?>" <?php comment_class(); ?>>
+		<article id="div-comment-<?php comment_ID(); ?>" class="comment-body">
+
+			<div class="comment-content">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<?php if ( 0 != $args['avatar_size'] ) echo get_avatar( $comment, $args['avatar_size'] ); ?>
+						<?php printf( '<b class="fn">%s</b>', get_comment_author_link() ); ?>
+					</div><!-- .comment-author -->
+				</footer><!-- .comment-meta -->
+				<?php if ( '0' == $comment->comment_approved ) : ?>
+					<p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'minnow' ); ?></p>
+				<?php endif; ?>
+				<?php comment_text(); ?>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+				<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID, $args ) ); ?>">
+					<time datetime="<?php comment_time( 'c' ); ?>">
+						<?php printf( '%s %s', get_comment_date(), get_comment_time() ); ?>
+					</time>
+				</a>
+				<?php edit_comment_link( __( 'Edit', 'minnow' ), '<span class="edit-link">', '</span>' ); ?>
+				<span class="reply">
+					<?php comment_reply_link( array_merge( $args, array( 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+				</span><!-- .reply -->
+			</div><!-- .comment-metadata -->
+
+		</article><!-- .comment-body -->
+<?php
+}
