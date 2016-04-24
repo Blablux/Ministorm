@@ -12,7 +12,7 @@ What this theme aims to modify:
 + as a child theme:
   + Reduce meta in posts (content & singles)
   + Change footer links and add licence
-  + Remove emoji bloat
+  + Remove emoji
   + Add some custom style
 + as a full featured theme (someday):
   + Custom header image

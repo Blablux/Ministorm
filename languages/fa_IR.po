@@ -1,0 +1,261 @@
+# Translation of Minnow in Persian
+# This file is distributed under the same license as the Minnow package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2014-10-22 03:41:28+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/0.1\n"
+"Project-Id-Version: Minnow\n"
+
+#: header.php:44
+msgid "Menu"
+msgstr "گزینگان"
+
+#. Description of the plugin/theme
+msgid "Minnow is designed to put your social presence front and center by displaying your social links menu prominently below the site title and logo, so readers can easily find you on your favorite social networks."
+msgstr ""
+
+#: inc/template-tags.php:125
+msgid "All %s posts"
+msgstr "همهٔ %s نوشته"
+
+#: search.php:16
+msgid "Search Results for: %s"
+msgstr "نتایج جست‌وجو برای: %s"
+
+#: inc/template-tags.php:98
+msgid "1 Comment"
+msgstr "۱ دیدگاه"
+
+#: inc/template-tags.php:98
+msgid "% Comments"
+msgstr "% دیدگاه"
+
+#: inc/template-tags.php:98
+msgid "Leave a comment"
+msgstr "بیان دیدگاه"
+
+#: inc/template-tags.php:55
+msgctxt "Previous post link"
+msgid "<span class=\"meta-nav\">&larr;</span>&nbsp;%title"
+msgstr ""
+
+#: inc/template-tags.php:56
+msgctxt "Next post link"
+msgid "%title&nbsp;<span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:90
+msgid ", "
+msgstr "، "
+
+#: inc/template-tags.php:52
+msgid "Post navigation"
+msgstr "ناوبری نوشته"
+
+#: inc/template-tags.php:29
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "نوشته‌های تازه‌تر <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/template-tags.php:21
+msgid "Posts navigation"
+msgstr "ناوبری نوشته‌ها"
+
+#: inc/template-tags.php:25
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> نوشته‌های پیشین"
+
+#: inc/extras.php:136
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr "%1$s در %2$s"
+
+#: inc/extras.php:128
+msgid "Your comment is awaiting moderation."
+msgstr "دیدگاه شما چشم به راه بررسی است."
+
+#: inc/extras.php:63
+msgid "Page %s"
+msgstr "صفحهٔ %s"
+
+#: inc/extras.php:124
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">می‌گوید:</span>"
+
+#: header.php:23
+msgid "Skip to content"
+msgstr "پرش به محتوا"
+
+#. Translators: If there are characters in your language that are not
+#. * supported by Open Sans, translate this to 'off'. Do not translate
+#. * into your own language.
+#: functions.php:121
+msgctxt "Open Sans font: on or off"
+msgid "on"
+msgstr "روی"
+
+#. Translators: If there are characters in your language that are not
+#. * supported by Open Sans Condensed, translate this to 'off'. Do not
+#. translate
+#. * into your own language.
+#: functions.php:127
+msgctxt "Open Sans Condensed font: on or off"
+msgid "on"
+msgstr "فعال"
+
+#: functions.php:41
+msgid "Social Links"
+msgstr "پیوندهای شبکه‌های اجتماعی"
+
+#: functions.php:76 header.php:40
+msgid "Sidebar"
+msgstr "ستون کناری"
+
+#: functions.php:40
+msgid "Primary Menu"
+msgstr "گزینگان اصلی"
+
+#: footer.php:17
+msgid "Theme: %1$s by %2$s."
+msgstr "پوسته: %1$s کاری از %2$s."
+
+#. translators: %s: Name of current post
+#: content.php:27
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: footer.php:15
+msgid "http://wordpress.org/"
+msgstr "http://wordpress.org/"
+
+#: footer.php:15
+msgid "Proudly powered by %s"
+msgstr "با افتخار، نیرو گرفته از %s"
+
+#: content-page.php:25 inc/extras.php:139 inc/template-tags.php:102
+msgid "Edit"
+msgstr "ویرایش"
+
+#: content-page.php:18 content-single.php:21 content.php:34
+msgid "Pages:"
+msgstr "صفحه‌ها:"
+
+#: content-none.php:23
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "متأسفانه، هیچ‌چیزی با عبارت‌های جستجوی شما مطابقت نداشت. لطفاً دوباره با چند کلیدواژهٔ متفاوت تلاش کنید."
+
+#: content-none.php:28
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "به نظر می‌آید ما نمی‌توانیم آنچه به دنبالش هستید بیابیم. احتمالا جست‌وجو می‌تواند کمک کند."
+
+#: content-none.php:19
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "آمادهٔ انتشار نخستین نوشتهٔ خود هستید؟ <a href=\"%1$s\">از اینجا بیآغازید</a>."
+
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr "چیزی پیدا نشد"
+
+#: comments.php:67
+msgid "Comments are closed."
+msgstr "دیدگاه‌ها بسته شده‌اند."
+
+#: comments.php:48
+msgid "Reply"
+msgstr "پاسخ"
+
+#: comments.php:36 comments.php:56
+msgid "&larr; Older Comments"
+msgstr "&larr; دیدگاه‌های پیشین"
+
+#: comments.php:37 comments.php:57
+msgid "Newer Comments &rarr;"
+msgstr "دیدگاه‌های تازه‌تر &rarr;"
+
+#: comments.php:35 comments.php:55
+msgid "Comment navigation"
+msgstr "ناوبری دیدگاه"
+
+#: comments.php:28
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s نظر برای &ldquo;%2$s&rdquo;"
+
+#: archive.php:63
+msgid "Chats"
+msgstr "گفتگوها"
+
+#: archive.php:66
+msgid "Archives"
+msgstr "بایگانی"
+
+#: archive.php:57
+msgid "Statuses"
+msgstr "وضعیت‌ها"
+
+#: archive.php:60
+msgid "Audios"
+msgstr "صوت‌ها"
+
+#: archive.php:54
+msgid "Links"
+msgstr "پیوندها"
+
+#: archive.php:51
+msgid "Quotes"
+msgstr "گفتاورد"
+
+#: archive.php:48
+msgid "Videos"
+msgstr "ویدئوها"
+
+#: archive.php:42
+msgid "Galleries"
+msgstr "گالری‌ها"
+
+#: archive.php:45
+msgid "Images"
+msgstr "تصویرها"
+
+#: archive.php:39
+msgid "Asides"
+msgstr "کلمات قصار"
+
+#: archive.php:36
+msgid "Year: %s"
+msgstr "سال: %s"
+
+#: archive.php:36
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: archive.php:33
+msgid "Month: %s"
+msgstr "ماه: %s"
+
+#: archive.php:33
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: archive.php:27
+msgid "Author: %s"
+msgstr "نویسنده: %s"
+
+#: archive.php:30
+msgid "Day: %s"
+msgstr "روز: %s"
+
+#: 404.php:19
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "اوه! امکان یافتن صفحه نیست."

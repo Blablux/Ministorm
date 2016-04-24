@@ -1,103 +1,195 @@
 <?php
+/**
+ * Minnow functions and definitions
+ *
+ * @package Minnow
+ */
 
-function disable_emojis() {
-	remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
-	remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
-	remove_action( 'wp_print_styles', 'print_emoji_styles' );
-	remove_action( 'admin_print_styles', 'print_emoji_styles' );
-	remove_filter( 'the_content_feed', 'wp_staticize_emoji' );
-	remove_filter( 'comment_text_rss', 'wp_staticize_emoji' );
-	remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
-	add_filter( 'tiny_mce_plugins', 'disable_emojis_tinymce' );
+/**
+ * Set the content width based on the theme's design and stylesheet.
+ */
+if ( ! isset( $content_width ) ) {
+	$content_width = 660; /* pixels */
 }
-add_action( 'init', 'disable_emojis' );
 
-function disable_emojis_tinymce( $plugins ) {
-	if ( is_array( $plugins ) ) {
-		return array_diff( $plugins, array( 'wpemoji' ) );
-	} else {
-		return array();
+if ( ! function_exists( 'minnow_setup' ) ) :
+/**
+ * Sets up theme defaults and registers support for various WordPress features.
+ *
+ * Note that this function is hooked into the after_setup_theme hook, which
+ * runs before the init hook. The init hook is too late for some features, such
+ * as indicating support for post thumbnails.
+ */
+function minnow_setup() {
+
+	/*
+	 * Make theme available for translation.
+	 * Translations can be filed in the /languages/ directory.
+	 * If you're building a theme based on Minnow, use a find and replace
+	 * to change 'minnow' to the name of your theme in all the template files
+	 */
+	load_theme_textdomain( 'minnow', get_template_directory() . '/languages' );
+
+	// Add default posts and comments RSS feed links to head.
+	add_theme_support( 'automatic-feed-links' );
+
+	add_editor_style( array( 'editor-style.css', minnow_fonts_url() ) );
+	
+	add_theme_support( 'title-tag' );
+
+	// This theme uses wp_nav_menu() in one location.
+	register_nav_menus( array(
+		'primary' => __( 'Primary Menu', 'minnow' ),
+		'social'  => __( 'Social Links', 'minnow' ),
+	) );
+
+	/*
+	 * Switch default core markup for search form, comment form, and comments
+	 * to output valid HTML5.
+	 */
+	add_theme_support( 'html5', array(
+		'search-form', 'comment-form', 'comment-list', 'gallery', 'caption',
+	) );
+
+	/*
+	 * Enable support for Post Formats.
+	 * See http://codex.wordpress.org/Post_Formats
+	 */
+	add_theme_support( 'post-formats', array(
+		'aside', 'image', 'video', 'quote', 'link', 'audio', 'gallery', 'status'
+	) );
+
+	// Set up the WordPress core custom background feature.
+	add_theme_support( 'custom-background', apply_filters( 'minnow_custom_background_args', array(
+		'default-color' => 'ffffff',
+		'default-image' => '',
+	) ) );
+}
+endif; // minnow_setup
+add_action( 'after_setup_theme', 'minnow_setup' );
+
+/**
+ * Register widget area.
+ *
+ * @link http://codex.wordpress.org/Function_Reference/register_sidebar
+ */
+function minnow_widgets_init() {
+	register_sidebar( array(
+		'name'          => __( 'Sidebar', 'minnow' ),
+		'id'            => 'sidebar-1',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
+}
+add_action( 'widgets_init', 'minnow_widgets_init' );
+
+/**
+ * Enqueue scripts and styles.
+ */
+function minnow_scripts() {
+
+	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css', array(), '3.2' );
+
+	wp_enqueue_style( 'minnow-style', get_stylesheet_uri() );
+
+	wp_enqueue_script( 'minnow-script', get_template_directory_uri() . '/js/minnow.js', array( 'jquery' ), '20141015', true );
+
+	wp_enqueue_script( 'minnow-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+
+	wp_enqueue_script( 'minnow-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+
+	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+		wp_enqueue_script( 'comment-reply' );
 	}
-}
 
-function tldr_mce_buttons_2($buttons) {
-    array_unshift($buttons, 'styleselect');
-    return $buttons;
-}
-add_filter('mce_buttons_2', 'tldr_mce_buttons_2');
+	wp_enqueue_style( 'minnow-opensans', minnow_fonts_url(), array(), null );
 
-function my_mce_before_init_insert_formats( $init_array ) {
-    $style_formats = array(
-        array(
-            'title' => 'tl;dr',
-            'block' => 'span',
-            'classes' => 'tldr',
-            'wrapper' => true,
-        ),
-    );
-    $init_array['style_formats'] = json_encode( $style_formats );
-    return $init_array;
 }
-add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' );
+add_action( 'wp_enqueue_scripts', 'minnow_scripts' );
 
-function theme_enqueue_styles() {
-  wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
-  wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/editor-style.css' );
-  wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/rtl.css' );
-}
-add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
+/**
+ * Register Google Fonts
+ */
+function minnow_fonts_url() {
+    $fonts_url = '';
 
-function minnow_posted_on() {
-	$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
-	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
-		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
+    /* Translators: If there are characters in your language that are not
+	 * supported by Open Sans, translate this to 'off'. Do not translate
+	 * into your own language.
+	 */
+	$opensans = _x( 'on', 'Open Sans font: on or off', 'minnow' );
+
+	/* Translators: If there are characters in your language that are not
+	 * supported by Open Sans Condensed, translate this to 'off'. Do not translate
+	 * into your own language.
+	 */
+	$opensanscond = _x( 'on', 'Open Sans Condensed font: on or off', 'minnow' );
+
+	$font_families = array();
+
+	if ( 'off' !== $opensans ) {
+
+		$font_families[] = 'Open Sans:300,400,700,700italic,400italic,300italic';
+
 	}
-	$time_string = sprintf( $time_string,
-		esc_attr( get_the_date( 'c' ) ),
-		esc_html( get_the_date() ),
-		esc_attr( get_the_modified_date( 'c' ) ),
-		esc_html( get_the_modified_date() )
-	);
-	$posted_on = '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>';
-	echo '<span class="posted-on">' . $posted_on . '</span>';
-	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-		echo '<span class="comments-link">';
-		comments_popup_link( __( 'Leave a comment', 'minnow' ), __( '1 Comment', 'minnow' ), __( '% Comments', 'minnow' ) );
-		echo '</span>';
+
+	if ( 'off' !== $opensanscond ) {
+
+		$font_families[] = 'Open Sans Condensed:700,700italic';
+
 	}
-	edit_post_link( __( 'Edit', 'minnow' ), '<span class="edit-link">', '</span>' );
+
+	if ( 'off' !== $opensanscond || 'off' !== $opensans ) {
+
+		$query_args = array(
+			'family' => urlencode( implode( '|', $font_families ) ),
+			'subset' => urlencode( 'latin,latin-ext' ),
+		);
+
+		$fonts_url = add_query_arg( $query_args, '//fonts.googleapis.com/css' );
+	}
+
+	return $fonts_url;
+
 }
 
-function minnow_comments( $comment, $args, $depth ) {
-?>
-	<li id="comment-<?php comment_ID(); ?>" <?php comment_class(); ?>>
-		<article id="div-comment-<?php comment_ID(); ?>" class="comment-body">
-
-			<div class="comment-content">
-				<footer class="comment-meta">
-					<div class="comment-author vcard">
-						<?php if ( 0 != $args['avatar_size'] ) echo get_avatar( $comment, $args['avatar_size'] ); ?>
-						<?php printf( '<b class="fn">%s</b>', get_comment_author_link() ); ?>
-					</div><!-- .comment-author -->
-				</footer><!-- .comment-meta -->
-				<?php if ( '0' == $comment->comment_approved ) : ?>
-					<p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'minnow' ); ?></p>
-				<?php endif; ?>
-				<?php comment_text(); ?>
-			</div><!-- .comment-content -->
-
-			<div class="comment-metadata">
-				<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID, $args ) ); ?>">
-					<time datetime="<?php comment_time( 'c' ); ?>">
-						<?php printf( '%s %s', get_comment_date(), get_comment_time() ); ?>
-					</time>
-				</a>
-				<?php edit_comment_link( __( 'Edit', 'minnow' ), '<span class="edit-link">', '</span>' ); ?>
-				<span class="reply">
-					<?php comment_reply_link( array_merge( $args, array( 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
-				</span><!-- .reply -->
-			</div><!-- .comment-metadata -->
-
-		</article><!-- .comment-body -->
-<?php
+/**
+ * Enqueue Google Fonts for Editor Styles
+ */
+function minnow_editor_styles() {
+    add_editor_style( array( 'editor-style.css', minnow_fonts_url() ) );
 }
+add_action( 'after_setup_theme', 'minnow_editor_styles' );
+
+/**
+ * Enqueue Google Fonts for custom headers
+ */
+function minnow_admin_scripts( $hook_suffix ) {
+
+	wp_enqueue_style( 'minnow-opensans', minnow_fonts_url(), array(), null );
+
+}
+add_action( 'admin_print_styles-appearance_page_custom-header', 'minnow_admin_scripts' );
+
+/**
+ * Custom template tags for this theme.
+ */
+require get_template_directory() . '/inc/template-tags.php';
+
+/**
+ * Custom functions that act independently of the theme templates.
+ */
+require get_template_directory() . '/inc/extras.php';
+
+/**
+ * Customizer additions.
+ */
+require get_template_directory() . '/inc/customizer.php';
+
+/**
+ * Load Jetpack compatibility file.
+ */
+require get_template_directory() . '/inc/jetpack.php';

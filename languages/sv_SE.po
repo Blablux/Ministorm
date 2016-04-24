@@ -1,0 +1,262 @@
+# Translation of Minnow in Swedish
+# This file is distributed under the same license as the Minnow package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2014-10-22 03:41:28+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/0.1\n"
+"Project-Id-Version: Minnow\n"
+
+#: header.php:44
+msgid "Menu"
+msgstr "Meny"
+
+#. Description of the plugin/theme
+msgid "Minnow is designed to put your social presence front and center by displaying your social links menu prominently below the site title and logo, so readers can easily find you on your favorite social networks."
+msgstr ""
+
+#: inc/template-tags.php:125
+msgid "All %s posts"
+msgstr "Alla %s inlägg"
+
+#: search.php:16
+msgid "Search Results for: %s"
+msgstr "Sökresultat för: %s"
+
+#: inc/template-tags.php:98
+msgid "1 Comment"
+msgstr "1 kommentar"
+
+#: inc/template-tags.php:98
+msgid "% Comments"
+msgstr "% kommentarer"
+
+#: inc/template-tags.php:98
+msgid "Leave a comment"
+msgstr "Lämna en kommentar"
+
+#: inc/template-tags.php:55
+msgctxt "Previous post link"
+msgid "<span class=\"meta-nav\">&larr;</span>&nbsp;%title"
+msgstr ""
+
+#: inc/template-tags.php:56
+msgctxt "Next post link"
+msgid "%title&nbsp;<span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:90
+msgid ", "
+msgstr ", "
+
+#: inc/template-tags.php:52
+msgid "Post navigation"
+msgstr "Inläggsnavigering"
+
+#: inc/template-tags.php:29
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Nyare inlägg <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/template-tags.php:21
+msgid "Posts navigation"
+msgstr "Inläggsnavigering"
+
+#: inc/template-tags.php:25
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Äldre inlägg"
+
+#: inc/extras.php:136
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr "%1$s kl. %2$s"
+
+#: inc/extras.php:128
+msgid "Your comment is awaiting moderation."
+msgstr "Din kommentar inväntar granskning."
+
+#: inc/extras.php:63
+msgid "Page %s"
+msgstr "Sida %s"
+
+#: inc/extras.php:124
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">skriver:</span>"
+
+#: header.php:23
+msgid "Skip to content"
+msgstr "Hoppa till innehåll"
+
+#. Translators: If there are characters in your language that are not
+#. * supported by Open Sans, translate this to 'off'. Do not translate
+#. * into your own language.
+#: functions.php:121
+msgctxt "Open Sans font: on or off"
+msgid "on"
+msgstr "on"
+
+#. Translators: If there are characters in your language that are not
+#. * supported by Open Sans Condensed, translate this to 'off'. Do not
+#. translate
+#. * into your own language.
+#: functions.php:127
+msgctxt "Open Sans Condensed font: on or off"
+msgid "on"
+msgstr "on"
+
+#: functions.php:41
+msgid "Social Links"
+msgstr "Sociala medielänkar"
+
+#: functions.php:76 header.php:40
+msgid "Sidebar"
+msgstr "Sidopanel"
+
+#: functions.php:40
+msgid "Primary Menu"
+msgstr "Primär meny"
+
+#: footer.php:17
+msgid "Theme: %1$s by %2$s."
+msgstr "Tema: %1$s av %2$s."
+
+#. translators: %s: Name of current post
+#: content.php:27
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: footer.php:15
+msgid "http://wordpress.org/"
+msgstr "http://wordpress.org/"
+
+#: footer.php:15
+msgid "Proudly powered by %s"
+msgstr "Drivs med %s"
+
+#: content-page.php:25 inc/extras.php:139 inc/template-tags.php:102
+msgid "Edit"
+msgstr "Redigera"
+
+#: content-page.php:18 content-single.php:21 content.php:34
+msgid "Pages:"
+msgstr "Sidor:"
+
+#: content-none.php:23
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Tyvärr matchade inget din sökning. Prova igen med något eller några andra nyckelord."
+
+#: content-none.php:28
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Det verkar inte som om vi kan hitta det du letar efter. Kanske kan en sökning hjälpa."
+
+#: content-none.php:19
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Är du redo att posta ditt första inlägg? <a href=\"%1$s\">Starta här</a>."
+
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr "Inget funnet"
+
+#: comments.php:67
+msgid "Comments are closed."
+msgstr "Kommentarer inaktiverade."
+
+#: comments.php:48
+msgid "Reply"
+msgstr "Svara"
+
+#: comments.php:36 comments.php:56
+msgid "&larr; Older Comments"
+msgstr "&larr; Äldre kommentarer"
+
+#: comments.php:37 comments.php:57
+msgid "Newer Comments &rarr;"
+msgstr "Nyare kommentarer &rarr;"
+
+#: comments.php:35 comments.php:55
+msgid "Comment navigation"
+msgstr "Kommentarsnavigering"
+
+#: comments.php:28
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "En reaktion på &rdquo;%2$s&rdquo;"
+msgstr[1] "%1$s reaktioner på &rdquo;%2$s&rdquo;"
+
+#: archive.php:63
+msgid "Chats"
+msgstr ""
+
+#: archive.php:66
+msgid "Archives"
+msgstr "Arkiv"
+
+#: archive.php:57
+msgid "Statuses"
+msgstr "Statusar"
+
+#: archive.php:60
+msgid "Audios"
+msgstr ""
+
+#: archive.php:54
+msgid "Links"
+msgstr "Länkar"
+
+#: archive.php:51
+msgid "Quotes"
+msgstr "citat"
+
+#: archive.php:48
+msgid "Videos"
+msgstr "Videos"
+
+#: archive.php:42
+msgid "Galleries"
+msgstr "Gallerier"
+
+#: archive.php:45
+msgid "Images"
+msgstr "Bilder"
+
+#: archive.php:39
+msgid "Asides"
+msgstr "Noteringar"
+
+#: archive.php:36
+msgid "Year: %s"
+msgstr "År: %s"
+
+#: archive.php:36
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: archive.php:33
+msgid "Month: %s"
+msgstr "Månad: %s"
+
+#: archive.php:33
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: archive.php:27
+msgid "Author: %s"
+msgstr "Författare: %s"
+
+#: archive.php:30
+msgid "Day: %s"
+msgstr "Dag: %s"
+
+#: 404.php:19
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "Det verkar som inget kunde hittas för denna plats. Vill du kanske försöka med en sökning?"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Hoppsan, sidan kunde inte hittas."
