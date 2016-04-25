@@ -60,6 +60,17 @@ function ministorm_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+	add_theme_support( 'custom-header', array(
+		'default-image'          => get_template_directory_uri() . '/images/default-header.jpg',
+		'height'                 => 300,
+		'width'                  => 960,
+		'max-width'              =>  2000,
+		'flex-height'            => true,
+		'flex-width'             => true,
+		'uploads'                => true,
+		'random-default'         => false,
+		'header-text'            => true,
+) );
 }
 endif; // ministorm_setup
 add_action( 'after_setup_theme', 'ministorm_setup' );

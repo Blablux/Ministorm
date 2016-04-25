@@ -9,11 +9,12 @@ fact, a theme without much features).
 
 Changes from Minnow:
 
-+ Reduce meta in posts (content & singles)
-+ Change footer links and add licence
++ Reduced meta in posts (content & singles)
++ Added licence in the footer
 + Remove emoji
-+ Add some custom style
++ Added some custom style
 + Changed caption style
++ Added custom header support
 
 All credits should go to *Automattic* as I didn't changed much of their Minnow
 release.

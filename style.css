@@ -1,6 +1,6 @@
 /*
 Theme Name: Ministorm
-Theme URI:    https://github.com/Blablux/Ministorm
+Theme URI:    https://github.com/Blablux/minnow-redux
 Description:  Minnow subtheme customized with some minimalism
 Author:       Benoit Hetru
 Author URI:   http://gahanka.net
@@ -1108,6 +1108,12 @@ p.comment-awaiting-moderation{
 	padding: 1.5em 0;
 	position: relative;
 }
+.header-background-image {
+    background: no-repeat center;
+    background-size: cover!important;
+    -moz-background-size: cover!important;
+    -webkit-background-size: cover!important;
+}
 .site-logo-link {
 	display: block;
 	margin: 0 auto;
@@ -1120,6 +1126,7 @@ p.comment-awaiting-moderation{
 .site-branding {
 	max-width: 80%;
 	padding: 0 0 0 1.5em;
+	background-color: rgba(255,255,255,0.3);
 }
 .site-description {
 	display: none;
@@ -1383,7 +1390,7 @@ object {
     text-align: center;
     color: white;
     border-radius: 50%;
-    background: #777;
+    background: #779;
 }
 .social-links ul a:hover {
     text-decoration: none;
@@ -1394,7 +1401,7 @@ object {
          -o-transition: all .3s ease-in-out;
             transition: all .3s ease-in-out;
     text-decoration: none;
-    background: #999;
+    background: #99B;
 }
 .social-links ul a[href*='wordpress.org']:before,
 .social-links ul a[href*='wordpress.com']:before {
