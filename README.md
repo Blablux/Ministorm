@@ -1,19 +1,19 @@
-# minnow-redux
+# Ministorm
 
-**minnow-redux** aims to be a clone of [minnow](https://wordpress.org/themes/minnow/)
-with much of the minimalism that I aim for.
+**Ministorm** is a slight variation of
+[Minnow](https://wordpress.org/themes/minnow/) with some more minimalism and a
+few features.
 
-This may start as a child-theme, but if I ever find the time to dig up the code,
-it might evolve in a full-featured theme (or in fact, a theme without much
-features), as I crave for simplicity.
+This started as a child-theme, but ended up as a full-featured theme (or in
+fact, a theme without much features).
 
-What this theme aims to modify:
+Changes from Minnow:
 
-+ as a child theme:
-  + Reduce meta in posts (content & singles)
-  + Change footer links and add licence
-  + Remove emoji
-  + Add some custom style
-+ as a full featured theme (someday):
-  + Custom header image
-  + Additional posts type
++ Reduce meta in posts (content & singles)
++ Change footer links and add licence
++ Remove emoji
++ Add some custom style
++ Changed caption style
+
+All credits should go to *Automattic* as I didn't changed much of their Minnow
+release.

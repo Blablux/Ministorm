@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features
  *
- * @package Minnow
+ * @package Ministorm
  */
 
 /**
@@ -13,11 +13,11 @@
  * @param array $args Configuration arguments.
  * @return array
  */
-function minnow_page_menu_args( $args ) {
+function ministorm_page_menu_args( $args ) {
 	$args['show_home'] = true;
 	return $args;
 }
-add_filter( 'wp_page_menu_args', 'minnow_page_menu_args' );
+add_filter( 'wp_page_menu_args', 'ministorm_page_menu_args' );
 
 /**
  * Adds custom classes to the array of body classes.
@@ -25,16 +25,14 @@ add_filter( 'wp_page_menu_args', 'minnow_page_menu_args' );
  * @param array $classes Classes for the body element.
  * @return array
  */
-function minnow_body_classes( $classes ) {
+function ministorm_body_classes( $classes ) {
 	// Adds a class of group-blog to blogs with more than 1 published author.
 	if ( is_multi_author() ) {
 		$classes[] = 'group-blog';
 	}
-
 	return $classes;
 }
-add_filter( 'body_class', 'minnow_body_classes' );
-
+add_filter( 'body_class', 'ministorm_body_classes' );
 if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
 	/**
 	 * Filters wp_title to print a neat <title> tag based on what is being viewed.
@@ -43,7 +41,7 @@ if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
 	 * @param string $sep Optional separator.
 	 * @return string The filtered title.
 	 */
-	function minnow_wp_title( $title, $sep ) {
+	function ministorm_wp_title( $title, $sep ) {
 		if ( is_feed() ) {
 			return $title;
 		}
@@ -57,23 +55,23 @@ if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
 		}
 		// Add a page number if necessary:
 		if ( ( $paged >= 2 || $page >= 2 ) && ! is_404() ) {
-			$title .= " $sep " . sprintf( __( 'Page %s', 'minnow' ), max( $paged, $page ) );
+			$title .= " $sep " . sprintf( __( 'Page %s', 'ministorm' ), max( $paged, $page ) );
 		}
 		return $title;
 	}
-	add_filter( 'wp_title', 'minnow_wp_title', 10, 2 );
+	add_filter( 'wp_title', 'ministorm_wp_title', 10, 2 );
 	/**
 	 * Title shim for sites older than WordPress 4.1.
 	 *
 	 * @link https://make.wordpress.org/core/2014/10/29/title-tags-in-4-1/
 	 * @todo Remove this function when WordPress 4.3 is released.
 	 */
-	function minnow_render_title() {
+	function ministorm_render_title() {
 		?>
 		<title><?php wp_title( '|', true, 'right' ); ?></title>
 		<?php
 	}
-	add_action( 'wp_head', 'minnow_render_title' );
+	add_action( 'wp_head', 'ministorm_render_title' );
 endif;
 
 /**
@@ -88,14 +86,13 @@ endif;
  * @global WP_Query $wp_query WordPress Query object.
  * @return void
  */
-function minnow_setup_author() {
+function ministorm_setup_author() {
 	global $wp_query;
-
 	if ( $wp_query->is_author() && isset( $wp_query->post ) ) {
 		$GLOBALS['authordata'] = get_userdata( $wp_query->post->post_author );
 	}
 }
-add_action( 'wp', 'minnow_setup_author' );
+add_action( 'wp', 'ministorm_setup_author' );
 
 
 /**
@@ -108,10 +105,9 @@ add_action( 'wp', 'minnow_setup_author' );
  *
  * @return string URL
  */
-function minnow_get_link_url() {
+function ministorm_get_link_url() {
 	$content = get_the_content();
 	$has_url = get_url_in_content( $content );
-
 	return ( $has_url ) ? $has_url : apply_filters( 'the_permalink', get_permalink() );
 }
 
@@ -121,11 +117,10 @@ function minnow_get_link_url() {
  * We're changing the look of the default comments display
  * to move comment meta around
  */
-function minnow_comments( $comment, $args, $depth ) {
+function ministorm_comments( $comment, $args, $depth ) {
 	?>
 		<li id="comment-<?php comment_ID(); ?>" <?php comment_class(); ?>>
 			<article id="div-comment-<?php comment_ID(); ?>" class="comment-body">
-
 				<div class="comment-content">
 					<footer class="comment-meta">
 						<div class="comment-author vcard">
@@ -134,18 +129,17 @@ function minnow_comments( $comment, $args, $depth ) {
 						</div><!-- .comment-author -->
 					</footer><!-- .comment-meta -->
 					<?php if ( '0' == $comment->comment_approved ) : ?>
-						<p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'minnow' ); ?></p>
+						<p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'ministorm' ); ?></p>
 					<?php endif; ?>
 					<?php comment_text(); ?>
 				</div><!-- .comment-content -->
-
 				<div class="comment-metadata">
 					<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID, $args ) ); ?>">
 						<time datetime="<?php comment_time( 'c' ); ?>">
 							<?php printf( '%s %s', get_comment_date(), get_comment_time() ); ?>
 						</time>
 					</a>
-					<?php edit_comment_link( __( 'Edit', 'minnow' ), '<span class="edit-link">', '</span>' ); ?>
+					<?php edit_comment_link( __( 'Edit', 'ministorm' ), '<span class="edit-link">', '</span>' ); ?>
 					<span class="reply">
 						<?php comment_reply_link( array_merge( $args, array( 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
 					</span><!-- .reply -->

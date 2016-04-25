@@ -2,93 +2,185 @@
 # This file is distributed under the same license as the Minnow package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2014-10-22 03:41:28+0000\n"
+"Project-Id-Version: Minnow\n"
+"Report-Msgid-Bugs-To: https://github.com/Blablux/Ministorm/issues\n"
+"POT-Creation-Date: 2016-04-25 12:12+0200\n"
+"PO-Revision-Date: 2016-04-25 12:12+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: GlotPress/0.1\n"
-"Project-Id-Version: Minnow\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 1.8.7.1\n"
 
-#: header.php:44
-msgid "Menu"
-msgstr "Меню"
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Ошибка. Страница не найдена."
 
-#. Description of the plugin/theme
-msgid "Minnow is designed to put your social presence front and center by displaying your social links menu prominently below the site title and logo, so readers can easily find you on your favorite social networks."
+#: 404.php:19
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+"По данному адресу ничего не найдено. Попробуйте воспользоваться поиском."
+
+#: archive.php:27
+msgid "Author: %s"
+msgstr "Автор: %s"
+
+#: archive.php:30
+msgid "Day: %s"
+msgstr "День: %s"
+
+#: archive.php:33
+msgid "Month: %s"
+msgstr "Месяц: %s"
+
+#: archive.php:33
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: archive.php:36
+msgid "Year: %s"
+msgstr "Год: %s"
+
+#: archive.php:36
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: archive.php:39
+msgid "Asides"
+msgstr "Заметки"
+
+#: archive.php:42
+msgid "Galleries"
+msgstr "Галереи"
+
+#: archive.php:45
+msgid "Images"
+msgstr "Изображения"
+
+#: archive.php:48
+msgid "Videos"
+msgstr "Видео"
+
+#: archive.php:51
+msgid "Quotes"
+msgstr "Цитаты"
+
+#: archive.php:54
+msgid "Links"
+msgstr "Ссылки"
+
+#: archive.php:57
+msgid "Statuses"
+msgstr "Статусы"
+
+#: archive.php:60
+msgid "Audios"
+msgstr "Аудиозаписи"
+
+#: archive.php:63
+msgid "Chats"
+msgstr "Чаты"
+
+#: archive.php:66
+msgid "Archives"
+msgstr "Архивы"
+
+#: comments.php:28
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%2$s: Один комментарий"
+msgstr[1] "%2$s: %1$s комментария"
+msgstr[2] "%2$s: %1$s комментариев"
+
+#: comments.php:35 comments.php:55
+msgid "Comment navigation"
+msgstr "Навигация по комментариям"
+
+#: comments.php:36 comments.php:56
+msgid "&larr; Older Comments"
+msgstr "&larr; Предыдущие комментарии"
+
+#: comments.php:37 comments.php:57
+msgid "Newer Comments &rarr;"
+msgstr "Следующие комментарии &rarr;"
+
+#: comments.php:48
+msgid "Reply"
+msgstr "Ответить"
+
+#: comments.php:67
+msgid "Comments are closed."
+msgstr "Обсуждение закрыто."
+
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr "Не найдено"
+
+#: content-none.php:19
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Готовы опубликовать свою первую запись? <a href=\"%1$s\">Начните отсюда</a>."
+
+#: content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Извините, по вашему запросу ничего не найдено. Попробуйте другие ключевые "
+"слова."
+
+#: content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Запрошенную информацию найти не удалось. Возможно, будет полезен поиск по "
+"сайту."
+
+#: content-page.php:18 content-single.php:21 content.php:34
+msgid "Pages:"
+msgstr "Страниц:"
+
+#: content-page.php:25 inc/extras.php:139 inc/template-tags.php:102
+msgid "Edit"
+msgstr "Изменить"
+
+#. translators: %s: Name of current post
+#: content.php:27
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
-#: inc/template-tags.php:125
-msgid "All %s posts"
-msgstr "Все записи: %s"
+#: footer.php:15
+msgid "http://wordpress.org/"
+msgstr "http://ru.wordpress.org/"
 
-#: search.php:16
-msgid "Search Results for: %s"
-msgstr "Результаты поиска: %s"
+#: footer.php:15
+msgid "Proudly powered by %s"
+msgstr "Сайт работает на %s"
 
-#: inc/template-tags.php:98
-msgid "1 Comment"
-msgstr "1 комментарий"
+#: footer.php:17
+msgid "Theme: %1$s by %2$s."
+msgstr "Тема: %1$s, автор: %2$s."
 
-#: inc/template-tags.php:98
-msgid "% Comments"
-msgstr "Комментарии (%)"
+#: functions.php:40
+msgid "Primary Menu"
+msgstr "Основное меню"
 
-#: inc/template-tags.php:98
-msgid "Leave a comment"
-msgstr "Оставить комментарий"
-
-#: inc/template-tags.php:55
-msgctxt "Previous post link"
-msgid "<span class=\"meta-nav\">&larr;</span>&nbsp;%title"
+#: functions.php:41
+msgid "Social Links"
 msgstr ""
 
-#: inc/template-tags.php:56
-msgctxt "Next post link"
-msgid "%title&nbsp;<span class=\"meta-nav\">&rarr;</span>"
-msgstr ""
-
-#. translators: used between list items, there is a space after the comma
-#: inc/template-tags.php:90
-msgid ", "
-msgstr ", "
-
-#: inc/template-tags.php:52
-msgid "Post navigation"
-msgstr "Навигация по записям"
-
-#: inc/template-tags.php:29
-msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Следующие записи <span class=\"meta-nav\">&rarr;</span>"
-
-#: inc/template-tags.php:21
-msgid "Posts navigation"
-msgstr "Навигация по записям"
-
-#: inc/template-tags.php:25
-msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
-msgstr "<span class=\"meta-nav\">&larr;</span> Предыдущие записи"
-
-#: inc/extras.php:136
-msgctxt "1: date, 2: time"
-msgid "%1$s at %2$s"
-msgstr "%1$s в %2$s"
-
-#: inc/extras.php:128
-msgid "Your comment is awaiting moderation."
-msgstr "Ваш комментарий ожидает проверки."
-
-#: inc/extras.php:63
-msgid "Page %s"
-msgstr "Страница %s"
-
-#: inc/extras.php:124
-msgid "%s <span class=\"says\">says:</span>"
-msgstr "%s<span class=\"says\">:</span>"
-
-#: header.php:23
-msgid "Skip to content"
-msgstr "Перейти к содержимому"
+#: functions.php:76 header.php:40
+msgid "Sidebar"
+msgstr "Боковая колонка"
 
 #. Translators: If there are characters in your language that are not
 #. * supported by Open Sans, translate this to 'off'. Do not translate
@@ -107,157 +199,101 @@ msgctxt "Open Sans Condensed font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:41
-msgid "Social Links"
+#: header.php:23
+msgid "Skip to content"
+msgstr "Перейти к содержимому"
+
+#: header.php:44
+msgid "Menu"
+msgstr "Меню"
+
+#: inc/extras.php:63
+msgid "Page %s"
+msgstr "Страница %s"
+
+#: inc/extras.php:124
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s<span class=\"says\">:</span>"
+
+#: inc/extras.php:128
+msgid "Your comment is awaiting moderation."
+msgstr "Ваш комментарий ожидает проверки."
+
+#: inc/extras.php:136
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr "%1$s в %2$s"
+
+#: inc/template-tags.php:21
+msgid "Posts navigation"
+msgstr "Навигация по записям"
+
+#: inc/template-tags.php:25
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Предыдущие записи"
+
+#: inc/template-tags.php:29
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Следующие записи <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/template-tags.php:52
+msgid "Post navigation"
+msgstr "Навигация по записям"
+
+#: inc/template-tags.php:55
+msgctxt "Previous post link"
+msgid "<span class=\"meta-nav\">&larr;</span>&nbsp;%title"
 msgstr ""
 
-#: functions.php:76 header.php:40
-msgid "Sidebar"
-msgstr "Боковая колонка"
-
-#: functions.php:40
-msgid "Primary Menu"
-msgstr "Основное меню"
-
-#: footer.php:17
-msgid "Theme: %1$s by %2$s."
-msgstr "Тема: %1$s, автор: %2$s."
-
-#. translators: %s: Name of current post
-#: content.php:27
-msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+#: inc/template-tags.php:56
+msgctxt "Next post link"
+msgid "%title&nbsp;<span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
-#: footer.php:15
-msgid "http://wordpress.org/"
-msgstr "http://ru.wordpress.org/"
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:90
+msgid ", "
+msgstr ", "
 
-#: footer.php:15
-msgid "Proudly powered by %s"
-msgstr "Сайт работает на %s"
+#: inc/template-tags.php:98
+msgid "Leave a comment"
+msgstr "Оставить комментарий"
 
-#: content-page.php:25 inc/extras.php:139 inc/template-tags.php:102
-msgid "Edit"
-msgstr "Изменить"
+#: inc/template-tags.php:98
+msgid "1 Comment"
+msgstr "1 комментарий"
 
-#: content-page.php:18 content-single.php:21 content.php:34
-msgid "Pages:"
-msgstr "Страниц:"
+#: inc/template-tags.php:98
+msgid "% Comments"
+msgstr "Комментарии (%)"
 
-#: content-none.php:23
-msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
-msgstr "Извините, по вашему запросу ничего не найдено. Попробуйте другие ключевые слова."
+#: inc/template-tags.php:125
+msgid "All %s posts"
+msgstr "Все записи: %s"
 
-#: content-none.php:28
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr "Запрошенную информацию найти не удалось. Возможно, будет полезен поиск по сайту."
+#: search.php:16
+msgid "Search Results for: %s"
+msgstr "Результаты поиска: %s"
 
-#: content-none.php:19
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr "Готовы опубликовать свою первую запись? <a href=\"%1$s\">Начните отсюда</a>."
+#. Theme Name of the plugin/theme
+msgid "Ministorm"
+msgstr ""
 
-#: content-none.php:13
-msgid "Nothing Found"
-msgstr "Не найдено"
+#. Theme URI of the plugin/theme
+msgid "https://github.com/Blablux/Ministorm"
+msgstr ""
 
-#: comments.php:67
-msgid "Comments are closed."
-msgstr "Обсуждение закрыто."
+#. Description of the plugin/theme
+msgid ""
+"Ministorm is designed to put your social presence front and center by "
+"displaying your social links menu prominently below the site title and logo, "
+"so readers can easily find you on your favorite social networks."
+msgstr ""
 
-#: comments.php:48
-msgid "Reply"
-msgstr "Ответить"
+#. Author of the plugin/theme
+msgid "Blablux"
+msgstr ""
 
-#: comments.php:36 comments.php:56
-msgid "&larr; Older Comments"
-msgstr "&larr; Предыдущие комментарии"
-
-#: comments.php:37 comments.php:57
-msgid "Newer Comments &rarr;"
-msgstr "Следующие комментарии &rarr;"
-
-#: comments.php:35 comments.php:55
-msgid "Comment navigation"
-msgstr "Навигация по комментариям"
-
-#: comments.php:28
-msgctxt "comments title"
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "%2$s: Один комментарий"
-msgstr[1] "%2$s: %1$s комментария"
-msgstr[2] "%2$s: %1$s комментариев"
-
-#: archive.php:63
-msgid "Chats"
-msgstr "Чаты"
-
-#: archive.php:66
-msgid "Archives"
-msgstr "Архивы"
-
-#: archive.php:57
-msgid "Statuses"
-msgstr "Статусы"
-
-#: archive.php:60
-msgid "Audios"
-msgstr "Аудиозаписи"
-
-#: archive.php:54
-msgid "Links"
-msgstr "Ссылки"
-
-#: archive.php:51
-msgid "Quotes"
-msgstr "Цитаты"
-
-#: archive.php:48
-msgid "Videos"
-msgstr "Видео"
-
-#: archive.php:42
-msgid "Galleries"
-msgstr "Галереи"
-
-#: archive.php:45
-msgid "Images"
-msgstr "Изображения"
-
-#: archive.php:39
-msgid "Asides"
-msgstr "Заметки"
-
-#: archive.php:36
-msgid "Year: %s"
-msgstr "Год: %s"
-
-#: archive.php:36
-msgctxt "yearly archives date format"
-msgid "Y"
-msgstr "Y"
-
-#: archive.php:33
-msgid "Month: %s"
-msgstr "Месяц: %s"
-
-#: archive.php:33
-msgctxt "monthly archives date format"
-msgid "F Y"
-msgstr "F Y"
-
-#: archive.php:27
-msgid "Author: %s"
-msgstr "Автор: %s"
-
-#: archive.php:30
-msgid "Day: %s"
-msgstr "День: %s"
-
-#: 404.php:19
-msgid "It looks like nothing was found at this location. Maybe try a search?"
-msgstr "По данному адресу ничего не найдено. Попробуйте воспользоваться поиском."
-
-#: 404.php:15
-msgid "Oops! That page can&rsquo;t be found."
-msgstr "Ошибка. Страница не найдена."
+#. Author URI of the plugin/theme
+msgid "https://github.com/Blablux"
+msgstr ""

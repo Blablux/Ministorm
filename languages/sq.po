@@ -2,93 +2,183 @@
 # This file is distributed under the same license as the Minnow package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2014-10-22 03:41:28+0000\n"
+"Project-Id-Version: Minnow\n"
+"Report-Msgid-Bugs-To: https://github.com/Blablux/Ministorm/issues\n"
+"POT-Creation-Date: 2016-04-25 12:13+0200\n"
+"PO-Revision-Date: 2016-04-25 12:13+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sq\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/0.1\n"
-"Project-Id-Version: Minnow\n"
+"X-Generator: Poedit 1.8.7.1\n"
 
-#: header.php:44
-msgid "Menu"
-msgstr "Menu"
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Hmm! Ajo faqe nuk gjendet dot."
 
-#. Description of the plugin/theme
-msgid "Minnow is designed to put your social presence front and center by displaying your social links menu prominently below the site title and logo, so readers can easily find you on your favorite social networks."
+#: 404.php:19
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "Duket se nuk u gjet gjë në këtë vend. Të provohet një kërkim ndoshta?"
+
+#: archive.php:27
+msgid "Author: %s"
+msgstr "Autor: %s"
+
+#: archive.php:30
+msgid "Day: %s"
+msgstr "Ditë: %s"
+
+#: archive.php:33
+msgid "Month: %s"
+msgstr "Muaj: %s"
+
+#: archive.php:33
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: archive.php:36
+msgid "Year: %s"
+msgstr "Vit: %s"
+
+#: archive.php:36
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: archive.php:39
+msgid "Asides"
+msgstr "Anësore"
+
+#: archive.php:42
+msgid "Galleries"
+msgstr "Galeri"
+
+#: archive.php:45
+msgid "Images"
+msgstr "Figura"
+
+#: archive.php:48
+msgid "Videos"
+msgstr "Video"
+
+#: archive.php:51
+msgid "Quotes"
+msgstr "Citime"
+
+#: archive.php:54
+msgid "Links"
+msgstr "Lidhje"
+
+#: archive.php:57
+msgid "Statuses"
+msgstr "Gjendje"
+
+#: archive.php:60
+msgid "Audios"
 msgstr ""
 
-#: inc/template-tags.php:125
-msgid "All %s posts"
-msgstr "Krejt postimet %s"
+#: archive.php:63
+msgid "Chats"
+msgstr "Fjalosje"
 
-#: search.php:16
-msgid "Search Results for: %s"
-msgstr "Përfundime Kërkimi për: %s"
+#: archive.php:66
+msgid "Archives"
+msgstr "Arkiva"
 
-#: inc/template-tags.php:98
-msgid "1 Comment"
-msgstr "1 Koment"
+#: comments.php:28
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Një mendim mbi &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s mendime mbi &ldquo;%2$s&rdquo;"
 
-#: inc/template-tags.php:98
-msgid "% Comments"
-msgstr "% Koment"
+#: comments.php:35 comments.php:55
+msgid "Comment navigation"
+msgstr "Lëvizje te komentet"
 
-#: inc/template-tags.php:98
-msgid "Leave a comment"
-msgstr "Lini një koment"
+#: comments.php:36 comments.php:56
+msgid "&larr; Older Comments"
+msgstr "&larr; Komentet Më të Vjetra"
 
-#: inc/template-tags.php:55
-msgctxt "Previous post link"
-msgid "<span class=\"meta-nav\">&larr;</span>&nbsp;%title"
+#: comments.php:37 comments.php:57
+msgid "Newer Comments &rarr;"
+msgstr "Komentet Më të Reja &rarr;"
+
+#: comments.php:48
+msgid "Reply"
+msgstr "Përgjigje"
+
+#: comments.php:67
+msgid "Comments are closed."
+msgstr "Komentet janë mbyllur."
+
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr "Nuk u Gjet Gjë"
+
+#: content-none.php:19
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Gati për botimin e postimit tuaj të parë? <a href=\"%1$s\">Fillojani këtu</"
+"a>."
+
+#: content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Na ndjeni, por nuk u përputh gjë me kriterin tuaj të kërkimit. Ju lutemi, "
+"riprovoni me ndonjë fjalëkyç tjetër."
+
+#: content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Duket se nuk qemë në gjendje të gjenim ç&#8217;po kërkonit. Ndoshta mund "
+"t&#8217;ju ndihë kërkimi."
+
+#: content-page.php:18 content-single.php:21 content.php:34
+msgid "Pages:"
+msgstr "Faqe:"
+
+#: content-page.php:25 inc/extras.php:139 inc/template-tags.php:102
+msgid "Edit"
+msgstr "Përpunoni"
+
+#. translators: %s: Name of current post
+#: content.php:27
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
-#: inc/template-tags.php:56
-msgctxt "Next post link"
-msgid "%title&nbsp;<span class=\"meta-nav\">&rarr;</span>"
-msgstr ""
+#: footer.php:15
+msgid "http://wordpress.org/"
+msgstr "http://wordpress.org/"
 
-#. translators: used between list items, there is a space after the comma
-#: inc/template-tags.php:90
-msgid ", "
-msgstr ", "
+#: footer.php:15
+msgid "Proudly powered by %s"
+msgstr "Bazohet me krenari në %s"
 
-#: inc/template-tags.php:52
-msgid "Post navigation"
-msgstr "Lëvizje te postimet"
+#: footer.php:17
+msgid "Theme: %1$s by %2$s."
+msgstr "Temë: %1$s nga %2$s."
 
-#: inc/template-tags.php:29
-msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Postime më të reja <span class=\"meta-nav\">&rarr;</span>"
+#: functions.php:40
+msgid "Primary Menu"
+msgstr "Menuja Parësore"
 
-#: inc/template-tags.php:21
-msgid "Posts navigation"
-msgstr "Lëvizje te postimet"
+#: functions.php:41
+msgid "Social Links"
+msgstr "Lidhje Shoqërore"
 
-#: inc/template-tags.php:25
-msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
-msgstr "<span class=\"meta-nav\">&larr;</span> Postime më të vjetra"
-
-#: inc/extras.php:136
-msgctxt "1: date, 2: time"
-msgid "%1$s at %2$s"
-msgstr "%1$s te %2$s"
-
-#: inc/extras.php:128
-msgid "Your comment is awaiting moderation."
-msgstr "Komenti juaj po pret moderimin."
-
-#: inc/extras.php:63
-msgid "Page %s"
-msgstr "Faqe %s"
-
-#: inc/extras.php:124
-msgid "%s <span class=\"says\">says:</span>"
-msgstr "%s <span class=\"says\">thotë:</span>"
-
-#: header.php:23
-msgid "Skip to content"
-msgstr "Hidhu te lënda"
+#: functions.php:76 header.php:40
+msgid "Sidebar"
+msgstr "Anështyllë"
 
 #. Translators: If there are characters in your language that are not
 #. * supported by Open Sans, translate this to 'off'. Do not translate
@@ -107,156 +197,101 @@ msgctxt "Open Sans Condensed font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:41
-msgid "Social Links"
-msgstr "Lidhje Shoqërore"
+#: header.php:23
+msgid "Skip to content"
+msgstr "Hidhu te lënda"
 
-#: functions.php:76 header.php:40
-msgid "Sidebar"
-msgstr "Anështyllë"
+#: header.php:44
+msgid "Menu"
+msgstr "Menu"
 
-#: functions.php:40
-msgid "Primary Menu"
-msgstr "Menuja Parësore"
+#: inc/extras.php:63
+msgid "Page %s"
+msgstr "Faqe %s"
 
-#: footer.php:17
-msgid "Theme: %1$s by %2$s."
-msgstr "Temë: %1$s nga %2$s."
+#: inc/extras.php:124
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">thotë:</span>"
 
-#. translators: %s: Name of current post
-#: content.php:27
-msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+#: inc/extras.php:128
+msgid "Your comment is awaiting moderation."
+msgstr "Komenti juaj po pret moderimin."
+
+#: inc/extras.php:136
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr "%1$s te %2$s"
+
+#: inc/template-tags.php:21
+msgid "Posts navigation"
+msgstr "Lëvizje te postimet"
+
+#: inc/template-tags.php:25
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Postime më të vjetra"
+
+#: inc/template-tags.php:29
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Postime më të reja <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/template-tags.php:52
+msgid "Post navigation"
+msgstr "Lëvizje te postimet"
+
+#: inc/template-tags.php:55
+msgctxt "Previous post link"
+msgid "<span class=\"meta-nav\">&larr;</span>&nbsp;%title"
 msgstr ""
 
-#: footer.php:15
-msgid "http://wordpress.org/"
-msgstr "http://wordpress.org/"
-
-#: footer.php:15
-msgid "Proudly powered by %s"
-msgstr "Bazohet me krenari në %s"
-
-#: content-page.php:25 inc/extras.php:139 inc/template-tags.php:102
-msgid "Edit"
-msgstr "Përpunoni"
-
-#: content-page.php:18 content-single.php:21 content.php:34
-msgid "Pages:"
-msgstr "Faqe:"
-
-#: content-none.php:23
-msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
-msgstr "Na ndjeni, por nuk u përputh gjë me kriterin tuaj të kërkimit. Ju lutemi, riprovoni me ndonjë fjalëkyç tjetër."
-
-#: content-none.php:28
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr "Duket se nuk qemë në gjendje të gjenim ç&#8217;po kërkonit. Ndoshta mund t&#8217;ju ndihë kërkimi."
-
-#: content-none.php:19
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr "Gati për botimin e postimit tuaj të parë? <a href=\"%1$s\">Fillojani këtu</a>."
-
-#: content-none.php:13
-msgid "Nothing Found"
-msgstr "Nuk u Gjet Gjë"
-
-#: comments.php:67
-msgid "Comments are closed."
-msgstr "Komentet janë mbyllur."
-
-#: comments.php:48
-msgid "Reply"
-msgstr "Përgjigje"
-
-#: comments.php:36 comments.php:56
-msgid "&larr; Older Comments"
-msgstr "&larr; Komentet Më të Vjetra"
-
-#: comments.php:37 comments.php:57
-msgid "Newer Comments &rarr;"
-msgstr "Komentet Më të Reja &rarr;"
-
-#: comments.php:35 comments.php:55
-msgid "Comment navigation"
-msgstr "Lëvizje te komentet"
-
-#: comments.php:28
-msgctxt "comments title"
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "Një mendim mbi &ldquo;%2$s&rdquo;"
-msgstr[1] "%1$s mendime mbi &ldquo;%2$s&rdquo;"
-
-#: archive.php:63
-msgid "Chats"
-msgstr "Fjalosje"
-
-#: archive.php:66
-msgid "Archives"
-msgstr "Arkiva"
-
-#: archive.php:57
-msgid "Statuses"
-msgstr "Gjendje"
-
-#: archive.php:60
-msgid "Audios"
+#: inc/template-tags.php:56
+msgctxt "Next post link"
+msgid "%title&nbsp;<span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
-#: archive.php:54
-msgid "Links"
-msgstr "Lidhje"
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:90
+msgid ", "
+msgstr ", "
 
-#: archive.php:51
-msgid "Quotes"
-msgstr "Citime"
+#: inc/template-tags.php:98
+msgid "Leave a comment"
+msgstr "Lini një koment"
 
-#: archive.php:48
-msgid "Videos"
-msgstr "Video"
+#: inc/template-tags.php:98
+msgid "1 Comment"
+msgstr "1 Koment"
 
-#: archive.php:42
-msgid "Galleries"
-msgstr "Galeri"
+#: inc/template-tags.php:98
+msgid "% Comments"
+msgstr "% Koment"
 
-#: archive.php:45
-msgid "Images"
-msgstr "Figura"
+#: inc/template-tags.php:125
+msgid "All %s posts"
+msgstr "Krejt postimet %s"
 
-#: archive.php:39
-msgid "Asides"
-msgstr "Anësore"
+#: search.php:16
+msgid "Search Results for: %s"
+msgstr "Përfundime Kërkimi për: %s"
 
-#: archive.php:36
-msgid "Year: %s"
-msgstr "Vit: %s"
+#. Theme Name of the plugin/theme
+msgid "Ministorm"
+msgstr ""
 
-#: archive.php:36
-msgctxt "yearly archives date format"
-msgid "Y"
-msgstr "Y"
+#. Theme URI of the plugin/theme
+msgid "https://github.com/Blablux/Ministorm"
+msgstr ""
 
-#: archive.php:33
-msgid "Month: %s"
-msgstr "Muaj: %s"
+#. Description of the plugin/theme
+msgid ""
+"Ministorm is designed to put your social presence front and center by "
+"displaying your social links menu prominently below the site title and logo, "
+"so readers can easily find you on your favorite social networks."
+msgstr ""
 
-#: archive.php:33
-msgctxt "monthly archives date format"
-msgid "F Y"
-msgstr "F Y"
+#. Author of the plugin/theme
+msgid "Blablux"
+msgstr ""
 
-#: archive.php:27
-msgid "Author: %s"
-msgstr "Autor: %s"
-
-#: archive.php:30
-msgid "Day: %s"
-msgstr "Ditë: %s"
-
-#: 404.php:19
-msgid "It looks like nothing was found at this location. Maybe try a search?"
-msgstr "Duket se nuk u gjet gjë në këtë vend. Të provohet një kërkim ndoshta?"
-
-#: 404.php:15
-msgid "Oops! That page can&rsquo;t be found."
-msgstr "Hmm! Ajo faqe nuk gjendet dot."
+#. Author URI of the plugin/theme
+msgid "https://github.com/Blablux"
+msgstr ""

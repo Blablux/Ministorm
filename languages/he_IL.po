@@ -2,93 +2,177 @@
 # This file is distributed under the same license as the Minnow package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2014-12-10 10:02:18+0000\n"
+"Project-Id-Version: Minnow\n"
+"Report-Msgid-Bugs-To: https://github.com/Blablux/Ministorm/issues\n"
+"POT-Creation-Date: 2016-04-25 12:11+0200\n"
+"PO-Revision-Date: 2016-04-25 12:11+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: he_IL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/0.1\n"
-"Project-Id-Version: Minnow\n"
+"X-Generator: Poedit 1.8.7.1\n"
 
-#: header.php:44
-msgid "Menu"
-msgstr "תפריט"
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "אופס. העמוד שביקשת אינו קיים."
 
-#. Description of the plugin/theme
-msgid "Minnow is designed to put your social presence front and center by displaying your social links menu prominently below the site title and logo, so readers can easily find you on your favorite social networks."
-msgstr ""
+#: 404.php:19
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "נראה שלא נמצא כלום במיקום הזה. אולי תנסו לחפש?"
 
-#: inc/template-tags.php:125
-msgid "All %s posts"
-msgstr "כל הרשומות של %s"
+#: archive.php:27
+msgid "Author: %s"
+msgstr "מחבר: %s"
 
-#: search.php:16
-msgid "Search Results for: %s"
-msgstr "תוצאות החיפוש: %s"
+#: archive.php:30
+msgid "Day: %s"
+msgstr "יום: %s"
 
-#: inc/template-tags.php:98
-msgid "1 Comment"
-msgstr "תגובה אחת"
+#: archive.php:33
+msgid "Month: %s"
+msgstr "חודש: %s"
 
-#: inc/template-tags.php:98
-msgid "% Comments"
-msgstr "% תגובות"
+#: archive.php:33
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
 
-#: inc/template-tags.php:98
-msgid "Leave a comment"
-msgstr "השארת תגובה"
+#: archive.php:36
+msgid "Year: %s"
+msgstr "שנה: %s"
 
-#: inc/template-tags.php:55
-msgctxt "Previous post link"
-msgid "<span class=\"meta-nav\">&larr;</span>&nbsp;%title"
-msgstr ""
+#: archive.php:36
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
 
-#: inc/template-tags.php:56
-msgctxt "Next post link"
-msgid "%title&nbsp;<span class=\"meta-nav\">&rarr;</span>"
-msgstr ""
+#: archive.php:39
+msgid "Asides"
+msgstr "קצרצרים"
 
-#. translators: used between list items, there is a space after the comma
-#: inc/template-tags.php:90
-msgid ", "
-msgstr ", "
+#: archive.php:42
+msgid "Galleries"
+msgstr "גלריות"
 
-#: inc/template-tags.php:52
-msgid "Post navigation"
-msgstr "ניווט ברשומות"
+#: archive.php:45
+msgid "Images"
+msgstr "תמונות"
 
-#: inc/template-tags.php:29
-msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
-msgstr "רשומות חדשות יותר <span class=\"meta-nav\">&larr;</span>"
+#: archive.php:48
+msgid "Videos"
+msgstr "סרטונים"
 
-#: inc/template-tags.php:21
-msgid "Posts navigation"
-msgstr "ניווט בין הרשומות"
+#: archive.php:51
+msgid "Quotes"
+msgstr "ציטוטים"
 
-#: inc/template-tags.php:25
-msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
-msgstr "<span class=\"meta-nav\">&rarr;</span> רשומות ישנות יותר"
+#: archive.php:54
+msgid "Links"
+msgstr "קישורים"
 
-#: inc/extras.php:136
-msgctxt "1: date, 2: time"
-msgid "%1$s at %2$s"
-msgstr "%1$s בשעה %2$s"
+#: archive.php:57
+msgid "Statuses"
+msgstr "סטטוסים"
 
-#: inc/extras.php:128
-msgid "Your comment is awaiting moderation."
-msgstr "התגובה ממתינה לאישור."
+#: archive.php:60
+msgid "Audios"
+msgstr "קבצי אודיו"
 
-#: inc/extras.php:63
-msgid "Page %s"
-msgstr "עמוד %s"
+#: archive.php:63
+msgid "Chats"
+msgstr "צ'טים"
 
-#: inc/extras.php:124
-msgid "%s <span class=\"says\">says:</span>"
-msgstr "%s <span class=\"says\">הגיב:</span>"
+#: archive.php:66
+msgid "Archives"
+msgstr "ארכיון"
 
-#: header.php:23
-msgid "Skip to content"
-msgstr "דילוג לתוכן"
+#: comments.php:28
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "מחשבה אחת על &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s מחשבות על &ldquo;%2$s&rdquo;"
+
+#: comments.php:35 comments.php:55
+msgid "Comment navigation"
+msgstr "ניווט בתגובות"
+
+#: comments.php:36 comments.php:56
+msgid "&larr; Older Comments"
+msgstr "&rarr; תגובות ישנות יותר"
+
+#: comments.php:37 comments.php:57
+msgid "Newer Comments &rarr;"
+msgstr "תגובות חדשות יותר &larr;"
+
+#: comments.php:48
+msgid "Reply"
+msgstr "להגיב"
+
+#: comments.php:67
+msgid "Comments are closed."
+msgstr "סגור לתגובות."
+
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr "לא מצאתי כלום"
+
+#: content-none.php:19
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "מוכן לפרסם את הרשומה הראשונה שלך? <a href=\"%1$s\">התחל כאן</a>."
+
+#: content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr "מצוערים, אבל לא נמצאה התאמה. אפשר לנסות שוב עם מילות חיפוש שונות."
+
+#: content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "נראה כי לא ניתן למצוא את מה שחיפשת, אולי חיפוש יעזור."
+
+#: content-page.php:18 content-single.php:21 content.php:34
+msgid "Pages:"
+msgstr ":עמודים"
+
+#: content-page.php:25 inc/extras.php:139 inc/template-tags.php:102
+msgid "Edit"
+msgstr "עריכה"
+
+#. translators: %s: Name of current post
+#: content.php:27
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "להמשיך לקרוא %s <span class=\"meta-nav\">&larr;</span>"
+
+#: footer.php:15
+msgid "http://wordpress.org/"
+msgstr "http://he.wordpress.org/"
+
+#: footer.php:15
+msgid "Proudly powered by %s"
+msgstr "פועל על %s"
+
+#: footer.php:17
+msgid "Theme: %1$s by %2$s."
+msgstr "ערכת עיצוב: %1$s של %2$s"
+
+#: functions.php:40
+msgid "Primary Menu"
+msgstr "תפריט ראשי"
+
+#: functions.php:41
+msgid "Social Links"
+msgstr "קישורים חברתיים"
+
+#: functions.php:76 header.php:40
+msgid "Sidebar"
+msgstr " סרגל צדדי"
 
 #. Translators: If there are characters in your language that are not
 #. * supported by Open Sans, translate this to 'off'. Do not translate
@@ -107,156 +191,101 @@ msgctxt "Open Sans Condensed font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:41
-msgid "Social Links"
-msgstr "קישורים חברתיים"
+#: header.php:23
+msgid "Skip to content"
+msgstr "דילוג לתוכן"
 
-#: functions.php:76 header.php:40
-msgid "Sidebar"
-msgstr " סרגל צדדי"
+#: header.php:44
+msgid "Menu"
+msgstr "תפריט"
 
-#: functions.php:40
-msgid "Primary Menu"
-msgstr "תפריט ראשי"
+#: inc/extras.php:63
+msgid "Page %s"
+msgstr "עמוד %s"
 
-#: footer.php:17
-msgid "Theme: %1$s by %2$s."
-msgstr "ערכת עיצוב: %1$s של %2$s"
+#: inc/extras.php:124
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">הגיב:</span>"
 
-#. translators: %s: Name of current post
-#: content.php:27
-msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
-msgstr "להמשיך לקרוא %s <span class=\"meta-nav\">&larr;</span>"
+#: inc/extras.php:128
+msgid "Your comment is awaiting moderation."
+msgstr "התגובה ממתינה לאישור."
 
-#: footer.php:15
-msgid "http://wordpress.org/"
-msgstr "http://he.wordpress.org/"
+#: inc/extras.php:136
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr "%1$s בשעה %2$s"
 
-#: footer.php:15
-msgid "Proudly powered by %s"
-msgstr "פועל על %s"
+#: inc/template-tags.php:21
+msgid "Posts navigation"
+msgstr "ניווט בין הרשומות"
 
-#: content-page.php:25 inc/extras.php:139 inc/template-tags.php:102
-msgid "Edit"
-msgstr "עריכה"
+#: inc/template-tags.php:25
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&rarr;</span> רשומות ישנות יותר"
 
-#: content-page.php:18 content-single.php:21 content.php:34
-msgid "Pages:"
-msgstr ":עמודים"
+#: inc/template-tags.php:29
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "רשומות חדשות יותר <span class=\"meta-nav\">&larr;</span>"
 
-#: content-none.php:23
-msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
-msgstr "מצוערים, אבל לא נמצאה התאמה. אפשר לנסות שוב עם מילות חיפוש שונות."
+#: inc/template-tags.php:52
+msgid "Post navigation"
+msgstr "ניווט ברשומות"
 
-#: content-none.php:28
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr "נראה כי לא ניתן למצוא את מה שחיפשת, אולי חיפוש יעזור."
+#: inc/template-tags.php:55
+msgctxt "Previous post link"
+msgid "<span class=\"meta-nav\">&larr;</span>&nbsp;%title"
+msgstr ""
 
-#: content-none.php:19
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr "מוכן לפרסם את הרשומה הראשונה שלך? <a href=\"%1$s\">התחל כאן</a>."
+#: inc/template-tags.php:56
+msgctxt "Next post link"
+msgid "%title&nbsp;<span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
 
-#: content-none.php:13
-msgid "Nothing Found"
-msgstr "לא מצאתי כלום"
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:90
+msgid ", "
+msgstr ", "
 
-#: comments.php:67
-msgid "Comments are closed."
-msgstr "סגור לתגובות."
+#: inc/template-tags.php:98
+msgid "Leave a comment"
+msgstr "השארת תגובה"
 
-#: comments.php:48
-msgid "Reply"
-msgstr "להגיב"
+#: inc/template-tags.php:98
+msgid "1 Comment"
+msgstr "תגובה אחת"
 
-#: comments.php:36 comments.php:56
-msgid "&larr; Older Comments"
-msgstr "&rarr; תגובות ישנות יותר"
+#: inc/template-tags.php:98
+msgid "% Comments"
+msgstr "% תגובות"
 
-#: comments.php:37 comments.php:57
-msgid "Newer Comments &rarr;"
-msgstr "תגובות חדשות יותר &larr;"
+#: inc/template-tags.php:125
+msgid "All %s posts"
+msgstr "כל הרשומות של %s"
 
-#: comments.php:35 comments.php:55
-msgid "Comment navigation"
-msgstr "ניווט בתגובות"
+#: search.php:16
+msgid "Search Results for: %s"
+msgstr "תוצאות החיפוש: %s"
 
-#: comments.php:28
-msgctxt "comments title"
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "מחשבה אחת על &ldquo;%2$s&rdquo;"
-msgstr[1] "%1$s מחשבות על &ldquo;%2$s&rdquo;"
+#. Theme Name of the plugin/theme
+msgid "Ministorm"
+msgstr ""
 
-#: archive.php:63
-msgid "Chats"
-msgstr "צ'טים"
+#. Theme URI of the plugin/theme
+msgid "https://github.com/Blablux/Ministorm"
+msgstr ""
 
-#: archive.php:66
-msgid "Archives"
-msgstr "ארכיון"
+#. Description of the plugin/theme
+msgid ""
+"Ministorm is designed to put your social presence front and center by "
+"displaying your social links menu prominently below the site title and logo, "
+"so readers can easily find you on your favorite social networks."
+msgstr ""
 
-#: archive.php:57
-msgid "Statuses"
-msgstr "סטטוסים"
+#. Author of the plugin/theme
+msgid "Blablux"
+msgstr ""
 
-#: archive.php:60
-msgid "Audios"
-msgstr "קבצי אודיו"
-
-#: archive.php:54
-msgid "Links"
-msgstr "קישורים"
-
-#: archive.php:51
-msgid "Quotes"
-msgstr "ציטוטים"
-
-#: archive.php:48
-msgid "Videos"
-msgstr "סרטונים"
-
-#: archive.php:42
-msgid "Galleries"
-msgstr "גלריות"
-
-#: archive.php:45
-msgid "Images"
-msgstr "תמונות"
-
-#: archive.php:39
-msgid "Asides"
-msgstr "קצרצרים"
-
-#: archive.php:36
-msgid "Year: %s"
-msgstr "שנה: %s"
-
-#: archive.php:36
-msgctxt "yearly archives date format"
-msgid "Y"
-msgstr "Y"
-
-#: archive.php:33
-msgid "Month: %s"
-msgstr "חודש: %s"
-
-#: archive.php:33
-msgctxt "monthly archives date format"
-msgid "F Y"
-msgstr "F Y"
-
-#: archive.php:27
-msgid "Author: %s"
-msgstr "מחבר: %s"
-
-#: archive.php:30
-msgid "Day: %s"
-msgstr "יום: %s"
-
-#: 404.php:19
-msgid "It looks like nothing was found at this location. Maybe try a search?"
-msgstr "נראה שלא נמצא כלום במיקום הזה. אולי תנסו לחפש?"
-
-#: 404.php:15
-msgid "Oops! That page can&rsquo;t be found."
-msgstr "אופס. העמוד שביקשת אינו קיים."
+#. Author URI of the plugin/theme
+msgid "https://github.com/Blablux"
+msgstr ""

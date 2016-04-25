@@ -2,93 +2,181 @@
 # This file is distributed under the same license as the Minnow package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2015-01-14 18:33:54+0000\n"
+"Project-Id-Version: Minnow\n"
+"Report-Msgid-Bugs-To: https://github.com/Blablux/Ministorm/issues\n"
+"POT-Creation-Date: 2016-04-25 12:10+0200\n"
+"PO-Revision-Date: 2016-04-25 12:10+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/0.1\n"
-"Project-Id-Version: Minnow\n"
+"X-Generator: Poedit 1.8.7.1\n"
 
-#: header.php:44
-msgid "Menu"
-msgstr "Valikko"
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Ups! Tätä sivua ei löydy."
 
-#. Description of the plugin/theme
-msgid "Minnow is designed to put your social presence front and center by displaying your social links menu prominently below the site title and logo, so readers can easily find you on your favorite social networks."
-msgstr "Minnow on suunniteltu tuomaan sosiaalinen media näkyvästi esille. Some-linkit ovat heti sivuston otsikon ja logon alapuolella, joten lukijat löytävät sinut sosiaalisessa mediassa helposti."
+#: 404.php:19
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "Näyttää siltä että täällä ei ole mitään. Kokeilepa hakua?"
 
-#: inc/template-tags.php:125
-msgid "All %s posts"
-msgstr "Kaikki kirjoittajan %s artikkelit"
+#: archive.php:27
+msgid "Author: %s"
+msgstr "Kirjoittaja: %s"
 
-#: search.php:16
-msgid "Search Results for: %s"
-msgstr "Hakutulokset kohteelle: %s"
+#: archive.php:30
+msgid "Day: %s"
+msgstr "Päivä: %s"
 
-#: inc/template-tags.php:98
-msgid "1 Comment"
-msgstr "1 kommentti"
+#: archive.php:33
+msgid "Month: %s"
+msgstr "Kuukausi: %s"
 
-#: inc/template-tags.php:98
-msgid "% Comments"
-msgstr "% kommenttia"
+#: archive.php:33
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
 
-#: inc/template-tags.php:98
-msgid "Leave a comment"
-msgstr "Jätä kommentti"
+#: archive.php:36
+msgid "Year: %s"
+msgstr "Vuosi: %s"
 
-#: inc/template-tags.php:55
-msgctxt "Previous post link"
-msgid "<span class=\"meta-nav\">&larr;</span>&nbsp;%title"
+#: archive.php:36
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: archive.php:39
+msgid "Asides"
+msgstr "Sivuhuomautukset"
+
+#: archive.php:42
+msgid "Galleries"
+msgstr "Galleriat"
+
+#: archive.php:45
+msgid "Images"
+msgstr "Kuvat"
+
+#: archive.php:48
+msgid "Videos"
+msgstr "Videot"
+
+#: archive.php:51
+msgid "Quotes"
+msgstr "Lainaukset"
+
+#: archive.php:54
+msgid "Links"
+msgstr "Linkit"
+
+#: archive.php:57
+msgid "Statuses"
+msgstr "Tilat"
+
+#: archive.php:60
+msgid "Audios"
+msgstr "Äänet"
+
+#: archive.php:63
+msgid "Chats"
+msgstr "Keskustelut"
+
+#: archive.php:66
+msgid "Archives"
+msgstr "Arkistot"
+
+#: comments.php:28
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Yksi kommentti artikkeliin &rdquo;%2$s&rdquo;"
+msgstr[1] "%1$s kommenttia artikkeliin &rdquo;%2$s&rdquo;"
+
+#: comments.php:35 comments.php:55
+msgid "Comment navigation"
+msgstr "Kommenttien selaus"
+
+#: comments.php:36 comments.php:56
+msgid "&larr; Older Comments"
+msgstr "&larr; Vanhemmat kommentit"
+
+#: comments.php:37 comments.php:57
+msgid "Newer Comments &rarr;"
+msgstr "Uudemmat kommentit &rarr;"
+
+#: comments.php:48
+msgid "Reply"
+msgstr "Vastaa"
+
+#: comments.php:67
+msgid "Comments are closed."
+msgstr "Kommentointi on suljettu."
+
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr "Mitään ei löytynyt"
+
+#: content-none.php:19
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
+"Oletko valmis julkaisemaan ensimmäisen kirjoituksesi? <a href=\"%1$s"
+"\">Aloita tästä</a>."
 
-#: inc/template-tags.php:56
-msgctxt "Next post link"
-msgid "%title&nbsp;<span class=\"meta-nav\">&rarr;</span>"
+#: content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
 msgstr ""
+"Pahoittelut mutta mitään ei löytynyt hakuehdoillasi. Kokeile uudelleen "
+"joillakin toisilla hakusanoilla."
 
-#. translators: used between list items, there is a space after the comma
-#: inc/template-tags.php:90
-msgid ", "
-msgstr ", "
+#: content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "Emme valitettavasti löytäneet etsimääsi. Ehkä hakutoiminnosta on apua."
 
-#: inc/template-tags.php:52
-msgid "Post navigation"
-msgstr "Artikkelien selaus"
+#: content-page.php:18 content-single.php:21 content.php:34
+msgid "Pages:"
+msgstr "Sivut:"
 
-#: inc/template-tags.php:29
-msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Uudemmat artikkelit <span class=\"meta-nav\">&rarr;</span>"
+#: content-page.php:25 inc/extras.php:139 inc/template-tags.php:102
+msgid "Edit"
+msgstr "Muokkaa"
 
-#: inc/template-tags.php:21
-msgid "Posts navigation"
-msgstr "Artikkelien selaus"
+#. translators: %s: Name of current post
+#: content.php:27
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Jatka lukemista %s <span class=\"meta-nav\">&rarr;</span>"
 
-#: inc/template-tags.php:25
-msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
-msgstr "<span class=\"meta-nav\">&larr;</span> Vanhemmat artikkelit"
+#: footer.php:15
+msgid "http://wordpress.org/"
+msgstr "http://wordpress.org/"
 
-#: inc/extras.php:136
-msgctxt "1: date, 2: time"
-msgid "%1$s at %2$s"
-msgstr "%1$s klo %2$s"
+#: footer.php:15
+msgid "Proudly powered by %s"
+msgstr "Voimanlähteenä %s"
 
-#: inc/extras.php:128
-msgid "Your comment is awaiting moderation."
-msgstr "Kommenttisi odottaa hyväksymistä."
+#: footer.php:17
+msgid "Theme: %1$s by %2$s."
+msgstr "Teema: %1$s tekijä %2$s."
 
-#: inc/extras.php:63
-msgid "Page %s"
-msgstr "Sivu %s"
+#: functions.php:40
+msgid "Primary Menu"
+msgstr "Ensisijainen valikko"
 
-#: inc/extras.php:124
-msgid "%s <span class=\"says\">says:</span>"
-msgstr "%s <span class=\"says\">sanoo:</span>"
+#: functions.php:41
+msgid "Social Links"
+msgstr "Some-linkit"
 
-#: header.php:23
-msgid "Skip to content"
-msgstr "Siirry sisältöön"
+#: functions.php:76 header.php:40
+msgid "Sidebar"
+msgstr "Sivupalkki"
 
 #. Translators: If there are characters in your language that are not
 #. * supported by Open Sans, translate this to 'off'. Do not translate
@@ -107,156 +195,110 @@ msgctxt "Open Sans Condensed font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:41
-msgid "Social Links"
-msgstr "Some-linkit"
+#: header.php:23
+msgid "Skip to content"
+msgstr "Siirry sisältöön"
 
-#: functions.php:76 header.php:40
-msgid "Sidebar"
-msgstr "Sivupalkki"
+#: header.php:44
+msgid "Menu"
+msgstr "Valikko"
 
-#: functions.php:40
-msgid "Primary Menu"
-msgstr "Ensisijainen valikko"
+#: inc/extras.php:63
+msgid "Page %s"
+msgstr "Sivu %s"
 
-#: footer.php:17
-msgid "Theme: %1$s by %2$s."
-msgstr "Teema: %1$s tekijä %2$s."
+#: inc/extras.php:124
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">sanoo:</span>"
 
-#. translators: %s: Name of current post
-#: content.php:27
-msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Jatka lukemista %s <span class=\"meta-nav\">&rarr;</span>"
+#: inc/extras.php:128
+msgid "Your comment is awaiting moderation."
+msgstr "Kommenttisi odottaa hyväksymistä."
 
-#: footer.php:15
-msgid "http://wordpress.org/"
-msgstr "http://wordpress.org/"
+#: inc/extras.php:136
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr "%1$s klo %2$s"
 
-#: footer.php:15
-msgid "Proudly powered by %s"
-msgstr "Voimanlähteenä %s"
+#: inc/template-tags.php:21
+msgid "Posts navigation"
+msgstr "Artikkelien selaus"
 
-#: content-page.php:25 inc/extras.php:139 inc/template-tags.php:102
-msgid "Edit"
-msgstr "Muokkaa"
+#: inc/template-tags.php:25
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Vanhemmat artikkelit"
 
-#: content-page.php:18 content-single.php:21 content.php:34
-msgid "Pages:"
-msgstr "Sivut:"
+#: inc/template-tags.php:29
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Uudemmat artikkelit <span class=\"meta-nav\">&rarr;</span>"
 
-#: content-none.php:23
-msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
-msgstr "Pahoittelut mutta mitään ei löytynyt hakuehdoillasi. Kokeile uudelleen joillakin toisilla hakusanoilla."
+#: inc/template-tags.php:52
+msgid "Post navigation"
+msgstr "Artikkelien selaus"
 
-#: content-none.php:28
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr "Emme valitettavasti löytäneet etsimääsi. Ehkä hakutoiminnosta on apua."
+#: inc/template-tags.php:55
+msgctxt "Previous post link"
+msgid "<span class=\"meta-nav\">&larr;</span>&nbsp;%title"
+msgstr ""
 
-#: content-none.php:19
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr "Oletko valmis julkaisemaan ensimmäisen kirjoituksesi? <a href=\"%1$s\">Aloita tästä</a>."
+#: inc/template-tags.php:56
+msgctxt "Next post link"
+msgid "%title&nbsp;<span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
 
-#: content-none.php:13
-msgid "Nothing Found"
-msgstr "Mitään ei löytynyt"
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:90
+msgid ", "
+msgstr ", "
 
-#: comments.php:67
-msgid "Comments are closed."
-msgstr "Kommentointi on suljettu."
+#: inc/template-tags.php:98
+msgid "Leave a comment"
+msgstr "Jätä kommentti"
 
-#: comments.php:48
-msgid "Reply"
-msgstr "Vastaa"
+#: inc/template-tags.php:98
+msgid "1 Comment"
+msgstr "1 kommentti"
 
-#: comments.php:36 comments.php:56
-msgid "&larr; Older Comments"
-msgstr "&larr; Vanhemmat kommentit"
+#: inc/template-tags.php:98
+msgid "% Comments"
+msgstr "% kommenttia"
 
-#: comments.php:37 comments.php:57
-msgid "Newer Comments &rarr;"
-msgstr "Uudemmat kommentit &rarr;"
+#: inc/template-tags.php:125
+msgid "All %s posts"
+msgstr "Kaikki kirjoittajan %s artikkelit"
 
-#: comments.php:35 comments.php:55
-msgid "Comment navigation"
-msgstr "Kommenttien selaus"
+#: search.php:16
+msgid "Search Results for: %s"
+msgstr "Hakutulokset kohteelle: %s"
 
-#: comments.php:28
-msgctxt "comments title"
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "Yksi kommentti artikkeliin &rdquo;%2$s&rdquo;"
-msgstr[1] "%1$s kommenttia artikkeliin &rdquo;%2$s&rdquo;"
+#. Theme Name of the plugin/theme
+msgid "Ministorm"
+msgstr ""
 
-#: archive.php:63
-msgid "Chats"
-msgstr "Keskustelut"
+#. Theme URI of the plugin/theme
+msgid "https://github.com/Blablux/Ministorm"
+msgstr ""
 
-#: archive.php:66
-msgid "Archives"
-msgstr "Arkistot"
+#. Description of the plugin/theme
+msgid ""
+"Ministorm is designed to put your social presence front and center by "
+"displaying your social links menu prominently below the site title and logo, "
+"so readers can easily find you on your favorite social networks."
+msgstr ""
 
-#: archive.php:57
-msgid "Statuses"
-msgstr "Tilat"
+#. Author of the plugin/theme
+msgid "Blablux"
+msgstr ""
 
-#: archive.php:60
-msgid "Audios"
-msgstr "Äänet"
+#. Author URI of the plugin/theme
+msgid "https://github.com/Blablux"
+msgstr ""
 
-#: archive.php:54
-msgid "Links"
-msgstr "Linkit"
-
-#: archive.php:51
-msgid "Quotes"
-msgstr "Lainaukset"
-
-#: archive.php:48
-msgid "Videos"
-msgstr "Videot"
-
-#: archive.php:42
-msgid "Galleries"
-msgstr "Galleriat"
-
-#: archive.php:45
-msgid "Images"
-msgstr "Kuvat"
-
-#: archive.php:39
-msgid "Asides"
-msgstr "Sivuhuomautukset"
-
-#: archive.php:36
-msgid "Year: %s"
-msgstr "Vuosi: %s"
-
-#: archive.php:36
-msgctxt "yearly archives date format"
-msgid "Y"
-msgstr "Y"
-
-#: archive.php:33
-msgid "Month: %s"
-msgstr "Kuukausi: %s"
-
-#: archive.php:33
-msgctxt "monthly archives date format"
-msgid "F Y"
-msgstr "F Y"
-
-#: archive.php:27
-msgid "Author: %s"
-msgstr "Kirjoittaja: %s"
-
-#: archive.php:30
-msgid "Day: %s"
-msgstr "Päivä: %s"
-
-#: 404.php:19
-msgid "It looks like nothing was found at this location. Maybe try a search?"
-msgstr "Näyttää siltä että täällä ei ole mitään. Kokeilepa hakua?"
-
-#: 404.php:15
-msgid "Oops! That page can&rsquo;t be found."
-msgstr "Ups! Tätä sivua ei löydy."
+#~ msgid ""
+#~ "Minnow is designed to put your social presence front and center by "
+#~ "displaying your social links menu prominently below the site title and "
+#~ "logo, so readers can easily find you on your favorite social networks."
+#~ msgstr ""
+#~ "Minnow on suunniteltu tuomaan sosiaalinen media näkyvästi esille. Some-"
+#~ "linkit ovat heti sivuston otsikon ja logon alapuolella, joten lukijat "
+#~ "löytävät sinut sosiaalisessa mediassa helposti."
